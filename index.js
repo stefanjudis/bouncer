@@ -1,5 +1,5 @@
 var Chrome   = require( 'chrome-remote-interface' );
-var Proxy    = require( '../bouncer-proxy' );
+var Proxy    = require( '3rd-party-bouncer-proxy' );
 var Queue    = require( './lib/utils/queue' );
 var Reporter = {
   requests : require( './lib/reporter/requests' )
@@ -151,23 +151,3 @@ Bouncer.prototype._run = function( url ) {
     this.chrome.Page.navigate( { url : 'localhost:' + this.options.proxy.port } );
   }, this );
 };
-
-
-// ( new Bouncer( {
-//   proxy : {
-//     allowed : [
-//       '*.natue.com.br',
-//       'cdn.natue.com.br',
-//       'media.natue.com.br',
-//       'http://d2wy8f7a9ursnm.cloudfront.net',
-//       'ajax.googleapis.com',
-//       '\'unsafe-inline\'',
-//       '\'unsafe-eval\''
-//     ],
-//     port    : 8000,
-//     url     : 'http://www.natue.com.br'
-//   }
-// } ) ).getReport( function( report ) {
-//   console.log( '****************' );
-//   console.log( JSON.stringify( report, null, 2 ) );
-// } );
