@@ -1,6 +1,6 @@
 {
   "name": "3rd-party-bouncer",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "description": "Tool to evaluate the impact of third party scripts",
   "main": "index.js",
   "scripts": {
