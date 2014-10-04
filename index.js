@@ -93,7 +93,9 @@ Bouncer.prototype._setup = function() {
           this.queue.pop();
 
           if ( this.queue.isEmpty() ) {
-            this.done( this.report );
+            this.proxy.shutDown( function() {
+              this.done( this.report );
+            }, this );
           }
         }, this );
       }
