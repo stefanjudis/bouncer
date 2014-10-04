@@ -151,3 +151,5 @@ Bouncer.prototype._run = function( url ) {
     this.chrome.Page.navigate( { url : 'localhost:' + this.options.proxy.port } );
   }, this );
 };
+
+module.exports = Bouncer;
