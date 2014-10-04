@@ -19,9 +19,9 @@
     "url": "https://github.com/stefanjudis/bouncer/issues"
   },
   "dependencies": {
-    "3rd-party-bouncer-proxy": "~0.1.0",
     "chrome-remote-interface": "^0.5.0",
     "debug": "~2.0.0",
-    "lodash": "~2.4.1"
+    "lodash": "~2.4.1",
+    "3rd-party-bouncer-proxy": "~0.3.0"
   }
 }
