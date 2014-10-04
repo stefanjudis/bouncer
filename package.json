@@ -1,0 +1,27 @@
+{
+  "name": "bouncer",
+  "version": "0.0.0",
+  "description": "Tool to evaluate the impact of third party scripts",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/stefanjudis/bouncer.git"
+  },
+  "keywords": [
+    "performance"
+  ],
+  "author": "Stefan Judis <stefanjudis@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/stefanjudis/bouncer/issues"
+  },
+  "dependencies": {
+    "bouncer-proxy": "~0.1.0",
+    "chrome-remote-interface": "^0.5.0",
+    "debug": "~2.0.0",
+    "lodash": "~2.4.1"
+  }
+}
